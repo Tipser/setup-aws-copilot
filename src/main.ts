@@ -14,7 +14,7 @@ export async function install(version: string, osPlat: string) {
 }
 
 export function downloadUrl(version: string, osPlat: string): string {
-  return `https://github.com/aws/copilot-cli/releases/download/${version}/${fileName(
+  return `https://github.com/Tipser/copilot-cli/releases/download/${version}/${fileName(
     version,
     osPlat
   )}`;
@@ -49,7 +49,7 @@ async function run() {
 }
 
 async function latestVersion(): Promise<string | undefined> {
-  const url = `https://api.github.com/repos/aws/copilot-cli/releases/latest`;
+  const url = `https://api.github.com/repos/Tipser/copilot-cli/releases/latest`;
   const client = new http.HttpClient("setup-aws-copilot");
   const resp = (await client.getJson<{ tag_name: string }>(url)).result;
   return resp?.tag_name;
