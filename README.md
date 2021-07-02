@@ -18,7 +18,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Setup AWS Copilot
-      uses: Tisper/setup-aws-copilot@v3
+      uses: Tipser/setup-aws-copilot@v3
 ```
 
 #### inputs
