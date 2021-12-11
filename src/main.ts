@@ -14,7 +14,7 @@ export async function install(version: string, osPlat: string) {
 }
 
 export function downloadUrl(version: string, osPlat: string): string {
-  return `https://github.com/Tipser/copilot-cli/releases/download/${version}/${fileName(
+  return `https://github.com/aws/copilot-cli/releases/download/${version}/${fileName(
     version,
     osPlat
   )}`;
